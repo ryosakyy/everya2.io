@@ -1,8 +1,7 @@
 import qrcode
 
-# URL target (Placeholder or local)
-# In a real scenario, this would be the hosted URL.
-url = "https://everyamarket.com/20-discount"
+# URL target (Final GitHub Pages URL)
+url = "https://ryosakyy.github.io/everya2.io/"
 
 qr = qrcode.QRCode(
     version=1,
