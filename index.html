@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Descuento Especial Everywhere Market!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="card">
+        <header>
+            <img src="assets/logo.png" alt="Everywhere Market Logo" class="logo">
+        </header>
+
+        <main>
+            <div class="message">¡Felicidades! Tienes un:</div>
+
+            <div class="anime-container">
+                <img src="assets/anime_girl.png" alt="Kawaii Character" class="anime-hero" id="random-anime">
+                <div class="discount-tag">20% OFF</div>
+            </div>
+        </main>
+
+        <footer>
+            <!-- Mensaje eliminado -->
+        </footer>
+    </div>
+
+    <script>
+        const images = [
+            'assets/anime_girl.png',
+            'assets/anime_girl_2.png',
+            'assets/anime_girl_3.png',
+            'assets/anime_girl_4.png',
+            'assets/anime_girl_5.png',
+            'assets/uploaded_bts_kawaii_1.png',
+            'assets/uploaded_bts_kawaii_2.jpg',
+            'assets/uploaded_bts_kawaii_3.png',
+            'assets/uploaded_bts_kawaii_4.png',
+            'assets/uploaded_bts_kawaii_5.png',
+            'assets/uploaded_bts_meme_1.png',
+            'assets/uploaded_bts_meme_2.png',
+            'assets/uploaded_bts_meme_3.png',
+            'assets/uploaded_bts_meme_4.png',
+            'assets/uploaded_bts_meme_5.png',
+            'assets/uploaded_anime_naruto.png',
+            'assets/uploaded_anime_gojo_fighting.png',
+            'assets/uploaded_anime_gojo_cat.png',
+            'assets/uploaded_anime_girl_sunglasses.png',
+            'assets/uploaded_anime_totoro.png'
+        ];
+        const randomImg = images[Math.floor(Math.random() * images.length)];
+        document.getElementById('random-anime').src = randomImg;
+    </script>
+
+    <!-- Animación de fondo decorativo -->
+    <div style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; opacity: 0.1;">
+        <img src="assets/decorations.png" style="width: 100%; height: 100%; object-fit: cover;">
+    </div>
+</body>
+
+</html>
